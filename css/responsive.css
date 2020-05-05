@@ -1,8 +1,14 @@
 /* Medium Layout: 1280px. */
-
 @media only screen and (min-width: 992px) and (max-width: 1280px) {
-
- 
+.header_center img{
+  max-width: 100px;
+}
+.header_right ul.checkout li a{
+  margin-top: 23px;
+}
+.w_likes {
+  top: 0;
+}
 .main_cat_item .tr-add-cart > ul {
   margin: 158px 0 0 12px;
 }
@@ -22,6 +28,7 @@ ul.wid_social li a {
   height: 36px;
   padding: 13px 5px 5px 15px;
   width: 36px;
+  margin-top: 5px;
 }
 ul.wid_social li {
   margin-right: 4px;
@@ -60,6 +67,9 @@ ul.wid_social li {
 }
 .nav_right a {
   padding-left: 19px;
+}
+.nav_left > a{
+  line-height: 60px;
 }
 .c_main_item p, .c_single_item p, .c_total_item p, .c_payment p {
   font-size: 10px;
@@ -132,15 +142,41 @@ ul.wid_social li {
 
 
 }
-
 /* Tablet Layout: 768px. */
-
 @media only screen and (min-width: 768px) and (max-width: 991px) {
  
  /* new. */
- .review_comments {
-margin-bottom: 30px;
-width:100%
+.header_center img{
+  max-width: 80px;
+}
+.header_center span{
+  font-size: 12px;
+  font-weight: bold;
+}
+.header_left a, .header_left span{
+  float: left;
+  opacity: 1;
+  margin-top: 18px;
+  margin-left: 12px;
+  width: 15%;
+}
+.header_left input[type="text"]{
+  opacity: 1;
+  width: 60%;
+}
+.w_likes{
+  top: 0;
+  left: 18px;
+}
+.header_right ul.checkout li{
+  margin-top: -13px;
+}
+.sidenav a{
+  font-size: 20px;
+}
+.review_comments {
+  margin-bottom: 30px;
+  width:100%
 }
  .Review_input {
   width: 98%;
@@ -232,7 +268,8 @@ ul.wid_social li a {
   right: 19px;
 }
 .nav_left a {
-  font-size: 14px;
+  font-size: 12px;
+  line-height: 50px;  
 }
 .nav_left i {
   margin-left: 12px;
@@ -570,20 +607,68 @@ ul#single_blog_nav {
 .ex_left {
   height: 165px;
 }
-
-
-
-
 }
-
 /* Mobile Layout: 320px. */
 
 @media only screen and (max-width: 767px) {
  
  /* new. */
- .review_comments {
-margin-bottom: 30px;
-width:100%
+ .sidenav a{
+  padding: 8px;
+  font-size: 15px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: 300;
+}
+.sidenav a:hover{
+  color: #cc17f6;
+}
+.cat_mega_menu{
+  position: relative;
+  top: 0;
+  width: 90%;
+  padding: 0;
+  margin: 10px auto;
+  box-shadow: none;
+}
+.cat_left{
+  width: 100%;
+  margin: 0;
+  padding: 10px 5px;
+}
+.cat_middle{
+  width: 100%;
+  margin: 0;
+  padding: 10px 5px;
+}
+.cat_middle_right{
+  width: 100%;
+  margin: 0;
+  padding: 10px 5px;
+}
+.sidenav ul{
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.sidenav ul li i{
+  margin-right: 10px;
+}
+.w_likes::before{
+  border-color: transparent transparent transparent #288ad5;
+  left: 26px;
+  top: 7px;
+}
+.w_likes{
+  top: 11px;
+  left: 52px;
+}
+.w_likes > span{
+  padding-left: 0;
+}
+.review_comments {
+  margin-bottom: 30px;
+  width:100%
 }
  .Review_input {
   width: 98%;
@@ -695,6 +780,12 @@ width:100%
   position: absolute;
   right: 22px;
 }
+.nav_area{
+  background-color: #292828;
+}
+.slider-wrap{
+  margin-top: 0;
+}
 .header_left {
   float: none;
   margin: 17px auto 0;
@@ -710,8 +801,10 @@ width:100%
   padding-top: 3px;
 }
 .header_center {
-  margin: 40px 0 0;
   text-align: center;
+}
+.header_center img{
+  max-width: 70px;
 }
 .header_right {
   display: block;
@@ -720,11 +813,25 @@ width:100%
   padding-bottom: 22px;
 }
 .header_top_right{
-  text-align: center;
-  width: 100%;
+  position: absolute;
+  right: 0px;
+  top: 25px;
 }
-.header_top_right p{
+.header_top_right p a{
+  font-size: 10px;
+  color: #ffffff;
+  display: inline-block;
+}
+.header_top_right p,.nav_left i{
   float: none;
+  color: #ffffff;
+}
+.nav_left i{
+  margin-left: 10px;
+  cursor: pointer;
+}
+.nav_left > a{
+  display: inline-block;
 }
 #cssmenu, #cssmenu ul, #cssmenu ul li, #cssmenu ul li a {
   background: none repeat scroll 0 0 #000000;
@@ -912,9 +1019,6 @@ width: 100%;
 }
 #owl-example.owl-carousel .item, #owl-example-two.owl-carousel .item, #owl-example-three.owl-carousel .item, #owl-example-four.owl-carousel .item {
   margin: 0 auto;
-}
-.owl-carousel .owl-next {
-  
 }
 
 .month_right {
@@ -1182,11 +1286,7 @@ position: relative;
 
 
 }
-
-
-
 /* Wide Mobile Layout: 480px. */
-
 @media only screen and (min-width: 480px) and (max-width: 767px) {
  
  /* new. */
@@ -1194,8 +1294,8 @@ position: relative;
   width: 33%;
 }
  .review_comments {
-margin-bottom: 30px;
-width:100%
+  margin-bottom: 30px;
+  width:100%
 }
  .Review_input {
   width: 98%;
