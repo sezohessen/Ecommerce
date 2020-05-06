@@ -1,6 +1,5 @@
 (function($) {
 	$(window).load(function() {
-
 		// Preloader
 		$('.loader').fadeOut();
 		$('.loader-mask').delay(350).fadeOut('slow');
@@ -37,6 +36,7 @@
 		$('.cat_mega_menu').fadeOut(300);
 		}
     });
+
 	$( ".nav_left i" ).click(function() {
 		$('.cat_mega_menu').addClass('visible-xs');
 	});

@@ -182,6 +182,14 @@ ul.wid_social li {
   width: 98%;
 }
  /* end new. */
+ /*Login page*/
+ .login-content form{
+  width: 100%;
+}
+.login-btn{
+  width: 50%;
+  margin: 0 auto;
+}
 .trending_box .nav.nav-tabs {
   width: 50%;
 }
@@ -666,6 +674,13 @@ ul#single_blog_nav {
 .w_likes > span{
   padding-left: 0;
 }
+/*Login*/
+.login-content form{
+  width: 100%;
+}
+.to-main{
+  position: initial;
+}
 .review_comments {
   margin-bottom: 30px;
   width:100%
@@ -780,11 +795,8 @@ ul#single_blog_nav {
   position: absolute;
   right: 22px;
 }
-.nav_area{
-  background-color: #292828;
-}
 .slider-wrap{
-  margin-top: 0;
+  margin-top:-39px;
 }
 .header_left {
   float: none;
@@ -1306,6 +1318,10 @@ position: relative;
 }
 .review_heading_left h2 {
   font-size: 16px;
+}
+/*Login page*/
+.login-content form{
+  width: 100%;
 }
  /* end new. */
 

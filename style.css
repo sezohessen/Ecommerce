@@ -2586,8 +2586,12 @@ font-size:13px;
   position: absolute;
   left: 100px;
   top: -20px;
+  z-index: 1;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+}
+.img img{
+  margin-top: 50px;
 }
 .to-main:hover{
   top: 0;
@@ -2606,7 +2610,7 @@ font-size:13px;
 }
 .body-login{
   font-family: 'manustrialmanustrial';
-  background-image: url("images/wallpaper.png");
+  background-color: #000000;
 }
 
 .login-content {

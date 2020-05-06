@@ -12,7 +12,6 @@ jQuery(document).ready(function($) {
         }, 600, function() {
         });
     });
-
     $(".login-content #register").click(function(){
         $(".login-content .login").addClass('hidden');
         $(".login-content .register").removeClass('hidden');
