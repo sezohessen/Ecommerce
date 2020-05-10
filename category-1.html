@@ -40,14 +40,17 @@
 		<div></div>
 	</div>
 </div>
-<section class="nav_area body-bg">
-		<div class="contain-nav" id="navbar">
+<section class="nav_area" >
+	<div class="contain-nav" id="navbar">
 		<div class="container">
 			<div class="row" >
-				<div class="col-md-3">
+				<div class="col-lg-3 col-md-2 col-sm-2 mobile-edit">
 					<div class="header_center">
 						<div id="mySidenav" class="sidenav">
 							<a href="javascript:void(0)" class="closebtn" id="closeNav">&times;</a>
+							<div class="header_top_right visible-xs">
+								<p><a href="login.html">login</a>/<a class="RegPage" href="login.html">register</a></p>
+							</div>
 							<a href="#">About</a>
 							<a href="category-1.html">Shop</a>
 							<a href="#">Clients</a>
@@ -56,8 +59,8 @@
 						<span id="openNav">&#9776; </span> <a href="index.html"><img src="images/brand.png" alt="Site Logo" /></a>
 					</div>
 				</div>
-				<div class="nav_left col-md-3">
-					<a href="category-1.html">category<i class="fa fa-bars"></i></a>
+				<div class="nav_left col-lg-3 col-md-3 col-sm-3" id="mobo">
+					<a href="category-1.html">category</a><i class="fa fa-bars hidden-xs"></i>
 					<div class="cat_mega_menu">
 							<div class="cat_left">
 								<h5>Shirts</h5>
@@ -94,132 +97,45 @@
 							</div>
 					</div>
 				</div>
+				<div class="nav_center col-lg-6 col-md-7 col-sm-6">
 
-				<div class="nav_center col-md-6">
-					<div class="row">
-						<div class="header_top_right floatright">
-								<p><a href="login.html">login</a> / <a href="">register</a></p>
+						<div class="header_top_right floatright hidden-xs">
+								<p><a href="login.html">login</a> / <a class="RegPage" href="login.html">register</a></p>
 						</div>
-						<div class="header_right col-md-5">
-							<ul class="checkout">
-								<li><a href="cart.html"><i class="fa fa-heart-o"></i>wishlist</a></li>
-								<li class="mobi_right_li"><a href="checkout.html"><i class="fa fa-shopping-cart"></i>Cart Items</a></li>
+					<div class="row checkout-mobo">
+						<div class="header_right col-lg-5 col-md-6">
+							<ul class="checkout hidden-sm hidden-xs">
+								<li class="wishlist "><a href="cart.html"><i class="fa fa-heart-o"></i>wishlist</a></li>
+								<li class="mobi_right_li "><a href="checkout.html"><i class="fa fa-shopping-cart"></i>Cart Items</a></li>
 							</ul>
-							<div class="w_likes">
+							<ul	class="checkout visible-sm visible-xs">
+								<li class="wishlist"><a href="cart.html"><i class="fa fa-heart-o"></i></a></li>
+								<li class="mobi_right_li"><a href="checkout.html"><i class="fa fa-shopping-cart"></i></a></li>
+							</ul> 
+							<div class="w_likes hidden-sm hidden-xs">
 								<span>3</span>
 							</div>
 						</div>
-						<div class="search col-md-7">
+						<div class="search col-lg-7 col-md-6 hidden-xs">
 								<div class="header_left">
-									<span class="fa fa-search"></span>
-									<a class="fa fa-search invisible" href=""></a>
+									<span class="fa fa-search hidden-sm"></span>
+									<a class="fa fa-search  hidden-lg hidden-md visible-sm" href=""></a>
 									<input type="text" placeholder="search"/>
 								</div>
 						</div>
 					</div>
 				</div>
-			
+		
 			
 				<!-- MOBILE ONLY CONTENT -->
-				<div class="only-for-mobile">
-					<ul class="ofm">
-						<li class="m_nav"><i class="fa fa-bars"></i> Navigation</li>
-					</ul>
+				
 
-					<!-- MOBILE MENU -->
-					<div class="mobi-menu">
-						<div id='cssmenu'>
-							<ul>
-								<li class='has-sub'>
-									<a href='index.html'><span>Home</span></a>
-									<ul class="sub-nav">
-										<li><a href="index.html"><span>Home 1</span></a></li>
-										<li><a href="index-2.html"><span>Home 2</span></a></li>
-									</ul>
-								</li>
 
-								<li class='has-sub'>
-									<a href='category-1.html'><span>category</span></a>
-									<ul>
-										<li class='has-sub'>
-											<a href='#'><span>Shirts</span></a>
-											<ul>
-												<li><a href="#"><span>check shirts</span></a></li>
-												<li><a href="#"><span>denim shirts</span></a></li>
-												<li><a href="#"><span>long sleeve shirts</span></a></li>
-												<li><a href="#"><span>denim shirts</span></a></li>
-												<li class="last"><a href="./#"><span>long sleeve shirts</span></a></li>
-											</ul>
-										</li>
-										<li class='has-sub'>
-											<a href='#'><span>T Shirts</span></a>
-											<ul>
-												<li><a href="#"><span>plain T-shirt</span></a></li>
-												<li><a href="#"><span>printed T-shirt</span></a></li>
-												<li><a href="#"><span>sports T-shirt</span></a></li>
-												<li><a href="#"><span>striped T-shirt</span></a></li>
-												<li class='last'><a href="#"><span>V-Neck T-Shirt</span></a></li>
-											</ul>
-										</li>
-										<li class='has-sub'>
-											<a href='#'><span>trousers fit</span></a>
-											<ul>
-												<li><a href="#"><span>flexible waist</span></a></li>
-												<li><a href="#"><span>regular fit</span></a></li>
-												<li><a href="#"><span>slim fit</span></a></li>
-												<li><a href="#"><span>tailored fit</span></a></li>
-												<li class='last'><a href="#"><span>tight fit</span></a></li>
-											</ul>
-										</li>
-										<li class="img-nav">
-											<div class="container">
-												<div class="clearfix"></div>
-												<div class="space20"></div>
-												<div class="clearfix"></div>
-												<div class="row in1">
-													<div class="col-md-6">
-														<a href="#"><img src="images/menu_cat.png" class="img-responsive" alt=""/></a>
-													</div>
-													<div class="col-md-6">
-													</div>
-													<div class="clearfix"></div>
-													<div class="space20"></div>
-													<div class="clearfix"></div>
-												</div>
-												<div class="clearfix"></div>
-												<div class="space20"></div>
-												<div class="clearfix"></div>
-											</div>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<a href='category-1.html'><span>shop</span></a>
-								</li>
-								<li class='has-sub'>
-									<a href='category-1.html'><span>accessories</span></a>
-									<ul class="sub-nav">
-										<li><a href="#"><span>check shirts</span></a></li>
-										<li><a href="#"><span>denim shirts</span></a></li>
-										<li><a href="#"><span>long sleeve shirts</span></a></li>
-										<li><a href="#"><span>plain shirts</span></a></li>
-										<li><a href="#"><span>printed shirts</span></a></li>
-										<li><a href="#"><span>short sleeve shirts</span></a></li>
-										<li><a href="#"><span>shortsleeve denim shirts</span></a></li>
-									</ul>
-								</li>
-								<li class='has-sub'>
-									<a href='contact.html'><span>contact</span></a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
+
 				<!-- MOBILE ONLY CONTENT -->
 			</div>
 		</div>
-		</div>
-
+	</div>
 </section>
 	<div class="filter_area">
 		<div class="container">
@@ -227,7 +143,14 @@
 				<div class="col-md-6 col-sm-8 col-xs-12">
 					<div class="filter_box_left">
 						<p>FILTERING:</p>
-
+						<div class="filter_cont">
+							<ul>
+								<li class="on">on</li>
+								<li><img class="visible" src="images/filter_ico.png" alt=""></li>
+								<li><img class="hidden" src="images/filter_ico_off.png" alt=""></li>
+								<li class="off">off</li>
+							</ul>
+						</div>
 						<div class="s_results">
 							<p><span>|</span> showing 1-12 of 30 results</p>
 						</div>
@@ -250,7 +173,7 @@
 	<section class="main_category_area">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-3 col-sm-4 col-xs-12">
+				<div class="col-md-3 col-sm-4 col-xs-12 filter-toggle">
 					<div class="main_category_left">
 					
 						<div class="panel-group" id="home-accordion" role="tablist" aria-multiselectable="true">
@@ -416,7 +339,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-9 col-sm-8 col-xs-12">
+				<div class="col-md-9 col-sm-8 col-xs-12 filter-toggle-main">
 					<div class="main_category_right">
 						<div class="row">
 							<div class="col-md-4 col-sm-6 col-xs-12">

@@ -325,6 +325,7 @@ nav.currency {
 }
 .nav_left i {
   margin-left: 65px;
+  color: #288ad5;
 }
 .navbar {
   border: 0 solid transparent;
@@ -355,6 +356,7 @@ nav.currency {
 }
 .nav_center .search{
   max-height: 70px;
+  display: inline-block;
 }
 
 .cart_menu .cart_items .c_item_img a {
@@ -449,7 +451,7 @@ nav.currency {
   overflow: hidden;
   padding: 0 30px;
   position: absolute;
-  top: 100px;
+  top: 57px;
   width: 700px;
   display: none;
   transition: all 0.5s ease 0s;
@@ -1239,7 +1241,24 @@ margin-right: 21px;
 text-transform: uppercase;
 width: 75px;
 }
-
+.filter_cont > ul li {
+  display: inline-block;
+}
+.filter_cont > ul li  {
+color: #777;
+font-size: 12px;
+padding: 4px;
+text-transform: uppercase;
+}
+.filter_cont > ul li:hover {
+  cursor: pointer;
+  color: #288ad5;
+  text-decoration:none;
+}
+.filter_cont {
+  float: left;
+  margin-right: 23px;
+}
 .s_results span {
   color: #ddd;
   margin-right: 30px;
@@ -1500,7 +1519,7 @@ top: -2px;
 width: 30px;
 }
 .cat-2 .pagi_line::after {
-  border-top: 2px solid #ff6766;
+  border-top: 2px solid #288ad5;
   content: "";
   left: 41%;
   position: absolute;
@@ -1508,12 +1527,15 @@ width: 30px;
   width: 30px;
 }
 .blog_page_area .pagi_line::after {
-  border-top: 2px solid #ff6766;
+  border-top: 2px solid #288ad5;
   content: "";
   left: 37%;
   position: absolute;
   top: -2px;
   width: 30px;
+}
+.main_category_right .active::after{
+  left: 41%;
 }
 .bootstrap-select > .btn {
   border-radius: 0;
