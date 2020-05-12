@@ -148,44 +148,49 @@
 					<div class="col-md-6 col-sm-6 col-xs-12">
 						<div class="single_product_image_tab">
 							<div role="tabpanel">
-
 							  <!-- Nav tabs -->
-							  <ul class="nav nav-tabs product_detail_zoom_tab" role="tablist">
-								<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">
-									<div class="small_img">
-										<img src="images/small_img1.jpg" alt="" />
-									</div>
-								</a></li>
-								<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">
-									<div class="small_img">
-										<img src="images/p_thumb.png" alt="" />
-									</div>
-								</a></li>
-								<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">
-									<div class="small_img">
-										<img src="images/p_thumb2.png" alt="" />
-									</div>
-								</a></li>
+							  <ul class="nav nav-tabs product_detail_zoom_tab" role="tablist" id="demo1">
+								<li role="presentation" class="active">
+									<a href="#home" aria-controls="home" role="tab" data-toggle="tab">
+										<div class="small_img">
+											<img src="images/small_img1.jpg" alt="" />
+										</div>
+									</a>
+								</li>
+								<li role="presentation">
+									<a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">
+										<div class="small_img">
+											<img src="images/p_thumb.png" alt="" />
+										</div>
+									</a>
+								</li>
+								<li role="presentation">
+									<a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">
+										<div class="small_img">
+											<img src="images/p_thumb2.png" alt="" />
+										</div>
+									</a>
+								</li>
 							  </ul>
 
 							  <!-- Tab panes -->
-							  <div class="tab-content">
-								<div role="tabpanel" class="tab-pane active" id="home">
+							  <div class="tab-content traverse">
+								<div role="tabpanel" class="tab-pane" id="home">
 									<div class="single_p_image">
 										<a href="images/single-large.jpg" data-lightbox="image-1" data-title="My caption"><img src="images/product-plus.png" alt="" /></a>
 										<img id="zoom_02" src="images/Product-Details-04.jpg" data-zoom-image="images/single-large.jpg" alt=""/>
 									</div>
 								</div>
-								<div role="tabpanel" class="tab-pane" id="profile">
+								<div role="tabpanel traverse" class="tab-pane" id="profile">
 									<div class="single_p_image">
 										<a href="images/single-large1.png" data-lightbox="image-1" data-title="My caption"><img src="images/product-plus.png" alt="" /></a>
 										<img id="zoom_03" src="images/product_detail_05.png" data-zoom-image="images/single-large1.png" alt=""/>
 									</div>
 								</div>
-								<div role="tabpanel" class="tab-pane" id="messages">
+								<div role="tabpanel traverse" class="tab-pane" id="messages">
 									<div class="single_p_image">
 										<a href="images/single-large2.png" data-lightbox="image-1" data-title="My caption"><img src="images/product-plus.png" alt="" /></a>
-										<img id="zoom_04" src="images/product_detail_06.png" data-zoom-image="images/single-large2.png" alt=""/>
+										<img id="zoom_04" src="images/single-large.jpg" data-zoom-image="images/single-large2.png" alt=""/>
 									</div>
 								</div>
 							  </div>
@@ -728,7 +733,6 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/lightbox.min.js"></script>
     <script src="js/jquery.elevatezoom.js"></script>
-    <script src="js/bootstrap-select.min.js"></script>
 	<script src="js/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
 	<script src="js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 	<script src="js/rs-plugin/rs.home.js"></script>
