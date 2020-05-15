@@ -20,41 +20,56 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="css/responsive.css">
 </head>
-<body>
-
+  <body class="main-page">
+	<div class="outer" id="Clickable"></div>
 	<div class="loader-mask">
 		<div class="loader">
 			<div></div>
 			<div></div>
 		</div>
 	</div>
-
+	<!--Side nav-bar-->
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" id="closeNav">&times;</a>
+		<div class="header_top_right login-side-bar visible-xs ">
+			<p><a href="login.html">login</a>/<a class="RegPage" href="login.html">Sign up</a></p>
+		</div>		
+		<div class="info">
+			<img src="images/comment1.png" alt="User Image" >
+			<a href="#">Gamal</a>
+			<a href="#">G@Gmail.com</a>
+		</div>
+		
+		<a href="#">About</a>
+		<a href="category-1.html">Shop</a>
+		<a href="contact.html">Contact</a>
+		<a href="faqs.html">FAQs</a>
+		<div class="sidenav-info">
+			<div class="single_widget">
+				<h5>information</h5>
+				<div class="wid_line"></div>
+				<ul class="widget_nav">
+					<li><a href="">New Products</a></li>
+					<li><a href="">Top Seller</a></li>
+					<li><a href="">Special</a></li>
+					<li><a href="">Manufactures</a></li>
+					<li><a href="">Suppliers</a></li>
+					<li><a href="">Our Stores</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--Side nav-bar-->
 	<section class="nav_area" >
 		<div class="contain-nav" id="navbar">
 			<div class="container">
 				<div class="row" >
-					<div class="col-lg-3 col-md-2 col-sm-2 mobile-edit">
+					<div class="col-lg-3 col-md-3 col-sm-3 mobile-edit">
 						<div class="header_center">
-							<div id="mySidenav" class="sidenav">
-								<a href="javascript:void(0)" class="closebtn" id="closeNav">&times;</a>
-								<div class="header_top_right visible-xs">
-									<p><a href="login.html">login</a>/<a class="RegPage" href="login.html">register</a></p>
-								</div>		
-								<div class="info">
-									<img src="images/comment1.png" alt="User Image" >
-									<a href="#">Gamal</a>
-									<a href="#">G@Gmail.com</a>
-								</div>
-								
-								<a href="#">About</a>
-								<a href="category-1.html">Shop</a>
-								<a href="#">Clients</a>
-								<a href="contact.html">Contact</a>
-							</div>
 							<span id="openNav">&#9776; </span> <a href="index.html"><img src="images/brand.png" alt="Site Logo" /></a>
 						</div>
 					</div>
-					<div class="nav_left col-lg-3 col-md-3 col-sm-3" id="mobo">
+					<div class="nav_left col-lg-3 col-md-2 col-sm-2" id="mobo">
 						<a href="category-1.html">category</a>
 						<div class="cat_mega_menu">
 								<div class="cat_left">
@@ -94,7 +109,7 @@
 					</div>
 					<div class="nav_center col-lg-6 col-md-7 col-sm-6">
 						<div class="header_top_right floatright hidden-xs">
-								<p><a href="login.html">login</a> / <a class="RegPage" href="login.html">register</a></p>
+							<p><a href="login.html">login</a> / <a class="RegPage" href="login.html">Sign up</a></p>
 						</div>
 						<div class="row checkout-mobo">
 							<div class="header_right col-lg-5 col-md-6">
@@ -106,7 +121,7 @@
 									<li class="wishlist"><a href="cart.html"><i class="fa fa-heart-o"></i></a></li>
 									<li class="mobi_right_li"><a href="checkout.html"><i class="fa fa-shopping-cart"></i></a></li>
 									<li class="find"><span href="#"><i class="fa fa-search"></i></span></li>
-									<li class="hidden-xs close-search"><span href="#"><i class="fa fa-close"></i></span></li>
+									<li class="hidden close-search"><span href="#"><i class="fa fa-close"></i></span></li>
 								</ul> 
 								<div class="w_likes hidden-sm hidden-xs">
 									<span>3</span>
@@ -114,8 +129,8 @@
 							</div>
 							<div class="search col-lg-7 col-md-6 hidden-xs">
 									<div class="header_left">
-										<span class="fa fa-search hidden-sm"></span>
-										<a class="fa fa-search  hidden-lg hidden-md visible-sm" href=""></a>
+										<span class="fa fa-search"></span>
+										<a class="fa fa-search  hidden" href=""></a>
 										<input type="text" placeholder="search"/>
 									</div>
 							</div>
@@ -125,8 +140,7 @@
 						<form action="">
 							<input class="search_input" type="text" name="" placeholder="Search...">
 							<button class="btn" type="submit" value="Search"><i class="fa fa-search fa-xs"></i></button>
-						</form>
-					
+						</form>			
 					</div>
 				</div>
 			</div>
@@ -224,7 +238,7 @@
 								<!-- Tab panes -->
 								<div class="tab-content">
 								<div role="tabpanel" class="tab-pane active" id="index">
-									<div id="owl-example" class="owl-carousel">
+									<div id="owl-example1" class="owl-carousel">
 										<div class="item">
 										<div class="item-img">
 											<img src="images/t_item1.jpg" alt="" />
@@ -352,7 +366,7 @@
 								</div>
 								
 								<div role="tabpanel" class="tab-pane" id="profile">
-									<div id="owl-example-two" class="owl-carousel">
+									<div id="owl-example2" class="owl-carousel">
 										<div class="item">
 										<div class="item-img">
 											<img src="images/t_item1.jpg" alt="" />
@@ -480,7 +494,7 @@
 								</div>
 								
 								<div role="tabpanel" class="tab-pane" id="messages">
-									<div id="owl-example-three" class="owl-carousel">
+									<div id="owl-example3" class="owl-carousel">
 										<div class="item">
 										<div class="item-img">
 											<img src="images/t_item10.jpg" alt="" />
@@ -618,21 +632,7 @@
 		<div class="footer_area">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-3 col-sm-3 col-xs-12">
-						<div class="single_widget">
-							<h5>information</h5>
-							<div class="wid_line"></div>
-							<ul class="widget_nav">
-								<li><a href="">New Products</a></li>
-								<li><a href="">Top Seller</a></li>
-								<li><a href="">Special</a></li>
-								<li><a href="">Manufactures</a></li>
-								<li><a href="">Suppliers</a></li>
-								<li><a href="">Our Stores</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-3 col-xs-12">
+					<div class="col-md-4 col-sm-4 col-xs-12">
 						<div class="single_widget">
 							<h5>my account</h5>
 							<div class="wid_line"></div>
@@ -646,7 +646,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-md-3 col-sm-3 col-xs-12">
+					<div class="col-md-4 col-sm-4 col-xs-12">
 						<div class="single_widget">
 							<h5>customer service</h5>
 							<div class="wid_line"></div>
@@ -660,7 +660,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-md-3 col-sm-3 col-xs-12">
+					<div class="col-md-4 col-sm-4 col-xs-12">
 						<div class="single_widget">
 							<h5>contact Info</h5>
 							<div class="wid_line"></div>
@@ -711,8 +711,7 @@
 		$( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
 		  " - $" + $( "#slider-range" ).slider( "values", 1 ) );
 	  });
-	  </script>
-	  
+	</script>	  
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.elevatezoom.js"></script>
     <script src="js/jquery.bxslider.min.js"></script>
