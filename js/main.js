@@ -18,6 +18,7 @@
 			navbar.classList.remove("sticky");	
 		}
 	}
+	
 	function search() {
 		if ($('.header_left span').css('display')=='none') {
 			$('.header_left span').css('display','block');
@@ -30,6 +31,20 @@
 			$('.search-block').addClass('hidden');
 		}
 	}
+	var btn = $('#button-to-top');
+
+	$(window).scroll(function() {
+	if ($(window).scrollTop() > 300) {
+		btn.addClass('show');
+	} else {
+		btn.removeClass('show');
+	}
+	});
+
+	btn.on('click', function(e) {
+	e.preventDefault();
+	$('html, body').animate({scrollTop:0}, '300');
+	});
 	if($('body').hasClass('main-page')){
 		$('.nav_area').css({"position":"absolute","width":"100%"});
 	}
