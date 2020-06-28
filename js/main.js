@@ -30,6 +30,9 @@ let trans = () => {
 if(localStorage.getItem('save') == 1){
 	document.documentElement.setAttribute('data-theme', 'dark')
 	$('input[name=mode]').prop("checked", true);
+}else{
+	document.documentElement.setAttribute('data-theme', 'light')
+	$('input[name=mode]').prop("checked", false);
 }
 //Save Dark Mode (New Edit)\
 var checkbox = document.querySelector('input[name=mode]');
@@ -40,6 +43,7 @@ checkbox.addEventListener('change', function() {
 		document.documentElement.setAttribute('data-theme', 'dark')
 	} else {
 		trans()
+		localStorage.setItem('save', 0);
 		document.documentElement.setAttribute('data-theme', 'light')
 	}
 })
