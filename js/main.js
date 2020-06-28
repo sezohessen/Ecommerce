@@ -1,5 +1,4 @@
 (function($) {
-	
 	$(window).load(function() {
 		// Preloader
 		$('.loader').fadeOut();
@@ -19,26 +18,31 @@
 			navbar.classList.remove("sticky");	
 		}
 	}
-// Toggle light dark mode
+// Toggle light dark mode\
 
-var checkbox = document.querySelector('input[name=mode]');
-
-checkbox.addEventListener('change', function() {
-	if(this.checked) {	
-		trans()
-		document.documentElement.setAttribute('data-theme', 'dark')
-	} else {
-		trans()
-		document.documentElement.setAttribute('data-theme', 'light')
-	}
-})
-
+//Save Dark Mode (New Edit)
 let trans = () => {
 	document.documentElement.classList.add('transition');
 	window.setTimeout(() => {
 		document.documentElement.classList.remove('transition');
 	}, 1000)
 }
+if(localStorage.getItem('save') == 1){
+	document.documentElement.setAttribute('data-theme', 'dark')
+	$('input[name=mode]').prop("checked", true);
+}
+//Save Dark Mode (New Edit)\
+var checkbox = document.querySelector('input[name=mode]');
+checkbox.addEventListener('change', function() {
+	if(this.checked) {	
+		trans()
+		localStorage.setItem('save', 1);
+		document.documentElement.setAttribute('data-theme', 'dark')
+	} else {
+		trans()
+		document.documentElement.setAttribute('data-theme', 'light')
+	}
+})
 
 // Toggle light dark mode
 	function search() {
